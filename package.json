@@ -1,7 +1,7 @@
 {
   "name": "facade-demo-shop",
   "version": "0.0.1",
-  "description": "",
+  "description": "demo shop website for facade framework",
   "private": true,
   "scripts": {
     "build": "npm run build:server && npm run build:client",
@@ -20,7 +20,7 @@
     "build:prod:analyze": "webpack --config-name client --mode production --analyze"
   },
   "keywords": [],
-  "author": "",
+  "author": "Andrian Kogoshvili",
   "license": "ISC",
   "dependencies": {
     "@splidejs/splide": "^4.1.4",
