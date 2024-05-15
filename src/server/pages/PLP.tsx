@@ -1,8 +1,8 @@
 import Header from 'server/layouts/header'
 import Body from 'server/layouts/body'
-import ProductList from 'server/components/ProductList.facade'
-import Filter from 'server/components/Filter.facade'
-import NavBar from 'server/components/NavBar.facade'
+import ProductList from 'server/components/ProductList'
+import Filter from 'server/components/Filter'
+import NavBar from 'server/components/NavBar'
 
 
 function PLP(req) {

@@ -1,7 +1,7 @@
 import { registerPages, initServer } from 'facade/server'
 
 import ShopPage from 'server/pages/ShopPage'
-import PDP from 'server/pages/PDP.facade'
+import PDP from 'server/pages/PDP'
 import PLP from 'server/pages/PLP'
 
 registerPages({
