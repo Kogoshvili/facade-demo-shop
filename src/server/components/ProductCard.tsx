@@ -14,13 +14,14 @@ class ProductCard {
         this.product().description = truncate(this.product().description, 100)
     }
 
-    openModal() {
+    openModal(val: any) {
+        console.log(val)
         // this.modalService().openModal(this.product)
     }
 
     render() {
         return (
-            <div class="max-w-sm rounded overflow-hidden shadow-lg m-2" onClick={this.openModal}>
+            <div class="max-w-sm rounded overflow-hidden shadow-lg m-2" onClick={() => this.openModal(123)}>
                 <img class="w-full" src={this.product().thumbnail} alt={this.product().title} />
                 <div class="px-6 py-4">
                     <a href={`/product?id=${this.product().id}`} class="font-bold text-xl mb-2">{this.product().title}</a>
