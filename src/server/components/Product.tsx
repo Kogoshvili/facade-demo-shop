@@ -2,8 +2,8 @@ import { inject, signal, prop } from 'facade/server'
 import CartService from 'server/services/CartService'
 
 class Product {
-    cartService = inject(CartService)
-    id = prop(p => p.id)
+    cartService = inject<CartService>(CartService)
+    id = prop<string>(p => p.id)
     product = null
 
     async mounted(){

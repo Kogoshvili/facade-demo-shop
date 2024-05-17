@@ -1,11 +1,11 @@
 import axios from 'axios'
 import { Splide } from '@splidejs/splide'
-import { inject, effect, signal, Facade, Link } from 'facade/server'
+import { inject, signal, Facade, Link } from 'facade/server'
 import CartService from 'server/services/CartService'
 import Cart from './Cart'
 
 class NavBar {
-    cartService = inject(CartService)
+    cartService = inject<CartService>(CartService)
     menu = []
     cartCount = signal(0)
     showCart = signal(false)
@@ -18,12 +18,13 @@ class NavBar {
         }))
     }
 
-    // effect(() => {
-    //     console.log('Navbar Cart')
-    //     const length = this.cartService().cart().length
-    //     console.log('Cart Length', length)
-    //     this.cartCount(length)
-    // })
+    effects = [
+        () => {
+            const a = this.cartService().cart()
+            const b = a
+            this.cartCount(b.length)
+        }
+    ]
 
     serverTest() {
         console.log('Navbar Server')

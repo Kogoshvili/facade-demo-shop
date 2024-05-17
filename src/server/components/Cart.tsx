@@ -1,5 +1,5 @@
 import CartService from 'server/services/CartService'
-import { inject, effect, signal } from 'facade/server'
+import { inject, signal } from 'facade/server'
 
 class Cart {
     cartService = inject<CartService>(CartService)
