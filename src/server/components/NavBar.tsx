@@ -13,8 +13,8 @@ class NavBar {
     async mounted() {
         const { data } = await axios.get('https://dummyjson.com/products/categories')
         this.menu = data.map(item => ({
-            title: item.toUpperCase(),
-            value: item
+            title: item.name,
+            value: item.slug
         }))
     }
 
