@@ -22,8 +22,7 @@ class NavBar {
     effects = [
         () => {
             const a = this.cartService().cart()
-            const b = a
-            this.cartCount(b.length)
+            this.cartCount(a.length)
         }
     ]
 

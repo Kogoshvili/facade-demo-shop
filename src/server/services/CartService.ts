@@ -8,7 +8,10 @@ class CartService {
     }
 
     removeFromCart(item: any) {
+    }
 
+    clear() {
+        this.cart([])
     }
 }
 
