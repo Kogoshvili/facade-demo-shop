@@ -3,12 +3,13 @@ import { Splide } from '@splidejs/splide'
 import { inject, signal, Facade, Link } from 'facade/server'
 import CartService from 'server/services/CartService'
 import Cart from './Cart'
+import { getElement } from 'facade/client/utils'
 
 class NavBar {
     cartService = inject<CartService>(CartService)
     menu = []
-    cartCount = signal(0)
-    showCart = signal(false)
+    cartCount = signal<number>(0)
+    showCart = signal<boolean>(false)
 
     async mounted() {
         const { data } = await axios.get('https://dummyjson.com/products/categories')
@@ -49,10 +50,12 @@ class NavBar {
         this.script_test()
         const w = await this.serverTest();
         console.log('response', w)
-        const element = document.getElementById(`${this._name}.${this._id}`)
+        const element = getElement(this)
         document.addEventListener("mousedown", (event) => {
-            if (element && !element.contains(event.target)) {
-                this.handleClick(false)
+            if (element && !element.contains(event.target as any)) {
+                if (this.showCart()) {
+                    this.handleClick(false)
+                }
             }
         });
     }
