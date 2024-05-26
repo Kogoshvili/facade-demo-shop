@@ -1,5 +1,5 @@
 import CartService from 'server/services/CartService'
-import { inject, signal, Link } from 'facade/server'
+import { inject, signal, Link } from 'facade-js/server'
 
 class Cart {
     cartService = inject<CartService>(CartService)

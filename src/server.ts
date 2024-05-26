@@ -1,4 +1,4 @@
-import { registerPages, initServer } from 'facade/server'
+import { registerPages, initServer } from 'facade-js/server'
 
 import ShopPage from 'server/pages/ShopPage'
 import PDP from 'server/pages/PDP'

@@ -1,4 +1,4 @@
-import { Header as BaseHeader } from 'facade/server'
+import { Header as BaseHeader } from 'facade-js/server'
 
 function Header({ name }: { name: string }) {
     return (
