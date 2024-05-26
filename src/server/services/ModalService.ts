@@ -1,4 +1,4 @@
-import { signal } from 'facade-js/server'
+import { signal } from '@kogoshvili/facade/server'
 
 class ModalService {
     modal = signal<string|null>(null)

@@ -1,9 +1,9 @@
 import axios from 'axios'
 import { Splide } from '@splidejs/splide'
-import { inject, signal, Facade, Link } from 'facade-js/server'
+import { inject, signal, Facade, Link } from '@kogoshvili/facade/server'
 import CartService from 'server/services/CartService'
 import Cart from './Cart'
-import { getElement } from 'facade-js/client/utils'
+import { getElement } from '@kogoshvili/facade/client/utils'
 
 class NavBar {
     cartService = inject<CartService>(CartService)

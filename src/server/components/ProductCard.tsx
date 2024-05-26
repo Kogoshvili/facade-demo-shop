@@ -1,4 +1,4 @@
-import { inject, prop } from 'facade-js/server'
+import { inject, prop } from '@kogoshvili/facade/server'
 import ModalService from 'server/services/ModalService'
 
 function truncate(str, num): string {

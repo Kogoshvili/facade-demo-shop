@@ -1,4 +1,4 @@
-import { signal } from 'facade-js/client'
+import { signal } from '@kogoshvili/facade/client'
 
 class Search {
     value: string = ''

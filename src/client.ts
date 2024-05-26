@@ -1,4 +1,4 @@
-import { registerComponents, initialize } from 'facade-js/client'
+import { registerComponents, initialize } from '@kogoshvili/facade/client'
 import Search from 'client/components/Search'
 
 registerComponents({

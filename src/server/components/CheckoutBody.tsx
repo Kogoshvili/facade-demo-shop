@@ -1,4 +1,4 @@
-import { inject, signal } from 'facade-js/server'
+import { inject, signal } from '@kogoshvili/facade/server'
 import CartService from 'server/services/CartService'
 
 class CheckoutBody {

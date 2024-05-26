@@ -1,4 +1,4 @@
-const { facadeConfig } = require('facade-js/webpack')
+const { facadeConfig } = require('@kogoshvili/facade/webpack')
 
 module.exports = facadeConfig({
     root: __dirname,

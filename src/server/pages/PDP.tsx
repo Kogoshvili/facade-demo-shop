@@ -2,7 +2,7 @@ import Header from 'server/layouts/header'
 import Body from 'server/layouts/body'
 import NavBar from 'server/components/NavBar'
 import Product from 'server/components/Product'
-import { prop } from 'facade-js/server'
+import { prop } from '@kogoshvili/facade/server'
 
 class PDP {
     id = prop((r) => r.query.id)
